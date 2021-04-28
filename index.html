@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">    
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
+    <!-- Importing styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="homepage">
+        <div class="homepage__content">
+            <h1 class="homepage__title">OXO</h1>
+            <span class="homepage__secondary">Infinite</span>
+            <span class="homepage__start">Tap to start</span>
+        </div>
+    </section>
+
+    <section class="players">
+        <div class="players__content">
+            <h2 class="players__title">New game</h2>
+            <div class="players__box">
+                <svg width="90" height="100" viewBox="0 0 90 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74.48 100L44.96 60.976H43.808L14.288 100H0.176L37.184 50.32L0.752 0.927997H15.44L44.24 39.088H45.392L74.336 0.927997H88.592L52.16 49.888L89.024 100H74.48Z" fill="white"/>
+                </svg>
+                <input type="text" placeholder="Player 1" class="players__name players__name-1">
+            </div>
+            <div class="players__box">
+                <svg width="70" height="80" viewBox="0 0 70 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.398438 39.2578C0.398438 31.8047 1.85156 25.1016 4.75781 19.1484C7.71094 13.1953 11.7891 8.60156 16.9922 5.36719C22.2422 2.13281 28.2188 0.515625 34.9219 0.515625C45.2812 0.515625 53.6484 4.10156 60.0234 11.2734C66.4453 18.4453 69.6562 27.9844 69.6562 39.8906V40.8047C69.6562 48.2109 68.2266 54.8672 65.3672 60.7734C62.5547 66.6328 58.5 71.2031 53.2031 74.4844C47.9531 77.7656 41.9062 79.4062 35.0625 79.4062C24.75 79.4062 16.3828 75.8203 9.96094 68.6484C3.58594 61.4766 0.398438 51.9844 0.398438 40.1719V39.2578ZM13.4766 40.8047C13.4766 49.2422 15.4219 56.0156 19.3125 61.125C23.25 66.2344 28.5 68.7891 35.0625 68.7891C41.6719 68.7891 46.9219 66.2109 50.8125 61.0547C54.7031 55.8516 56.6484 48.5859 56.6484 39.2578C56.6484 30.9141 54.6562 24.1641 50.6719 19.0078C46.7344 13.8047 41.4844 11.2031 34.9219 11.2031C28.5 11.2031 23.3203 13.7578 19.3828 18.8672C15.4453 23.9766 13.4766 31.2891 13.4766 40.8047Z" fill="white"/>
+                </svg>                    
+                <input type="text" placeholder="Player 1" class="players__name players__name-2">
+            </div>
+
+            <button class="players__start-btn">
+                Start 
+            </button>
+        </div>
+    </section>
+
+    <section class="playground">
+        <span class="playground__name-1"></span>
+        <span class="playground__name-2"></span>
+    </section>
+</body>
+
+<!-- Importing scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./scripts/main.js"></script>
+
+</html> 

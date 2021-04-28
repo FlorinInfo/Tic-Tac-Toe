@@ -1,0 +1,145 @@
+
+/* Importing animations */
+@import url(./animations.css);
+
+
+/* Default setup */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+/* Variables */
+
+:root {
+    --main-font: 'Libre Franklin', sans-serif;
+    --color-white:white;
+}
+
+.homepage,
+.players,
+.playground{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #412cb8ef, #c991e3), url("../assets/img/bg-homepage.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    position: relative;
+    transition: all .5s;
+}
+
+.homepage__content,
+.players__content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    backface-visibility: hidden;
+    animation: appear 1.4s;
+
+}
+
+.homepage__title{
+    display:block;
+    margin: auto;
+    width: 100%;
+    font-family: var(--main-font);
+    font-size: 8rem;
+    color: var(--color-white);
+    letter-spacing: 1rem;
+   
+}
+ 
+.homepage__secondary{
+    display:block;
+    margin: auto;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--color-white), transparent);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
+
+.homepage__start{
+    display: block;
+    margin-top: 10rem;
+    font-family: var(--main-font);
+    color: rgb(238, 238, 238);
+    font-size: 2rem;
+    animation: bounce 2s infinite 2s;
+}    
+
+.players__title{
+    display:block;
+    margin: auto;
+    width: 100%;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    color: var(--color-white);
+    letter-spacing: 1rem;
+}
+
+.players__box{
+    display: flex;
+}
+
+.players__box>svg{
+    width: 1.5rem;
+    fill: red; 
+}
+
+.players__name{
+    height: 2rem;
+    margin: auto 0;
+    margin-left: 3rem;
+    background: transparent;
+    border:none;
+    outline: none;;
+    padding-bottom: 1.6rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.players__name::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+    font-family: var(--main-font);
+  }
+  
+.players__name:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+    font-family: var(--main-font);
+  }
+  
+.players__name::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(255, 255, 255);
+    font-family: var(--main-font);
+  }
+
+  .players__start-btn{
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.6rem;
+      font-family: var(--main-font);
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      color: #777;
+      font-weight: bold;
+      border-radius: 5rem;
+      -webkit-box-shadow: 0 1rem 1rem #00000054;
+        box-shadow: 0 0.9rem 2rem #00000054;
+  }
